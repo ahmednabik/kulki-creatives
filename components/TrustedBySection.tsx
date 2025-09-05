@@ -11,7 +11,7 @@ export default function TrustedBySection() {
   ]
 
   return (
-    <section className="py-16 w-4/6 mx-auto overflow-hidden">
+    <section className="pt-16 w-4/6 mx-auto overflow-hidden">
       <div className=" mx-auto px-4 text-center">
         <h3 className="text-2xl font-semibold text-black mb-12">Top companies trust us with their design</h3>
         

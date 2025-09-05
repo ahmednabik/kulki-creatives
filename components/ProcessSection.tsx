@@ -1,6 +1,5 @@
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
-import { Users, Target, Layers } from "lucide-react"
 
 export default function ProcessSection() {
   return (
@@ -16,8 +15,12 @@ export default function ProcessSection() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="bg-black text-white p-8 rounded-3xl">
               <CardContent className="p-0">
-                <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center mb-6">
-                  <Users className="w-6 h-6 text-white" />
+                <div className="w-24 h-24 rounded-lg flex items-center justify-center mb-6 overflow-hidden">
+                  <img 
+                    src="https://framerusercontent.com/images/TAEmGfQEJ5Suks1YjRW8RuIh54.gif" 
+                    alt="Start Process"
+                    className="w-30 h-30 object-contain"
+                  />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Start</h3>
                 <p className="text-gray-300">
@@ -28,8 +31,12 @@ export default function ProcessSection() {
 
             <Card className="bg-black text-white p-8 rounded-3xl">
               <CardContent className="p-0">
-                <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center mb-6">
-                  <Target className="w-6 h-6 text-white" />
+                <div className="w-24 h-24 rounded-lg flex items-center justify-center mb-6 overflow-hidden">
+                  <img 
+                    src="https://framerusercontent.com/images/WlLwg2PWM3tgfPFKJaU8kI9HcQ.gif" 
+                    alt="Progress Process"
+                    className="w-24 h-24 object-contain"
+                  />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Progress</h3>
                 <p className="text-gray-300">
@@ -41,8 +48,12 @@ export default function ProcessSection() {
 
             <Card className="bg-black text-white p-8 rounded-3xl">
               <CardContent className="p-0">
-                <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center mb-6">
-                  <Layers className="w-6 h-6 text-white" />
+                <div className="w-24 h-24 rounded-lg flex items-center justify-center mb-6 overflow-hidden">
+                  <img 
+                    src="https://framerusercontent.com/images/eOYmDepwcVrlObPOfS5j9vCI.gif" 
+                    alt="Deliver Process"
+                    className="w-24 h-24 object-contain"
+                  />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Deliver</h3>
                 <p className="text-gray-300">

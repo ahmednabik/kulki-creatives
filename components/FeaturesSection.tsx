@@ -60,7 +60,7 @@ export default function FeaturesSection() {
     <section className="py-16 ">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <Badge className="bg-orange-500 text-white mb-6 px-4 py-2">✱ Features</Badge>
+     <Badge className="bg-orange-100 text-orange-600 mb-4">✱ Features</Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-4 leading-tight">
             Here is why you'll
             <br />

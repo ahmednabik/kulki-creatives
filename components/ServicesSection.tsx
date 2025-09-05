@@ -27,7 +27,7 @@ export default function ServicesSection() {
     <section className="py-16">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <Badge className="bg-orange-500 text-white mb-6 px-4 py-2">✱ Services</Badge>
+          <Badge className="bg-orange-100 text-orange-600 mb-4">✱ Services</Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-4 leading-tight">
             Branding, Labels & Packaging
           </h2>
@@ -59,7 +59,7 @@ export default function ServicesSection() {
         </div>
 
         <div className="text-center">
-          <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full text-lg font-medium">
+          <Button className="bg-[#ff4f01] hover:bg-[#e04501] text-white px-8 py-3 rounded-full text-lg font-medium">
             Book a 15-min call
           </Button>
         </div>

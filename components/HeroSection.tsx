@@ -31,7 +31,7 @@ export default function HeroSection() {
           </h2>
           <p className="text-lg text-gray-600 mb-8">Have a PRO designer on standby. Any day. Any hour</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full text-lg">
+            <Button className="bg-[#ff4f01] hover:bg-[#e04501] text-white px-8 py-3 rounded-full text-lg">
               Book a call
             </Button>
             <Button

@@ -11,7 +11,7 @@ const ImageGrid = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="bg-gradient-to-br from-orange-400 to-orange-600 rounded-3xl aspect-square overflow-hidden">
+          <div className="bg-gradient-to-br from-[#ff4f01] to-[#e04501] rounded-3xl aspect-square overflow-hidden">
             <img
               src="/tea-packaging-design-on-orange-background.jpg"
               alt="Tea packaging"

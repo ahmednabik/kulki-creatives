@@ -15,85 +15,22 @@ export default function TestimonialsSection() {
           <p className="text-gray-600 text-lg">What our customers say about our work.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Video Testimonials */}
-          <div className="relative bg-black rounded-2xl aspect-[4/5] overflow-hidden group cursor-pointer">
-            <img
-              src="/professional-man-with-glasses-testimonial-video.jpg"
-              alt="Testimonial"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                <Play className="w-6 h-6 text-white ml-1" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {/* Real Video Testimonials */}
+            {[
+              "WhatsApp Video 2025-09-05 at 1.19.30 AM (1).mp4",
+              "WhatsApp Video 2025-09-05 at 1.19.30 AM.mp4",
+              "WhatsApp Video 2025-09-05 at 1.19.31 AM.mp4",
+              "WhatsApp Video 2025-09-05 at 1.19.33 AM.mp4"
+            ].map((video, idx) => (
+              <div key={video} className="relative bg-black rounded-2xl aspect-[9/16] overflow-hidden group shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <video
+                  src={`/${video}`}
+                  controls
+                  className="w-full h-full object-cover"
+                />
               </div>
-            </div>
-          </div>
-
-          <div className="relative bg-black rounded-2xl aspect-[4/5] overflow-hidden group cursor-pointer">
-            <img
-              src="/professional-man-with-glasses-testimonial-video-du.jpg"
-              alt="Testimonial"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                <Play className="w-6 h-6 text-white ml-1" />
-              </div>
-            </div>
-          </div>
-
-          <div className="relative bg-black rounded-2xl aspect-[4/5] overflow-hidden group cursor-pointer">
-            <img
-              src="/man-with-cap-and-headphones-testimonial-video.jpg"
-              alt="Testimonial"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                <Play className="w-6 h-6 text-white ml-1" />
-              </div>
-            </div>
-          </div>
-
-          <div className="relative bg-gray-200 rounded-2xl aspect-[4/5] overflow-hidden group cursor-pointer">
-            <img
-              src="/man-with-glasses-testimonial-video-light-backgroun.jpg"
-              alt="Testimonial"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                <Play className="w-6 h-6 text-white ml-1" />
-              </div>
-            </div>
-          </div>
-
-          <div className="relative bg-gray-300 rounded-2xl aspect-[4/5] overflow-hidden group cursor-pointer">
-            <img
-              src="/testimonial-video-placeholder-gray.jpg"
-              alt="Testimonial"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                <Play className="w-6 h-6 text-white ml-1" />
-              </div>
-            </div>
-          </div>
-
-          <div className="relative bg-black rounded-2xl aspect-[4/5] overflow-hidden group cursor-pointer">
-            <img
-              src="/placeholder.svg?height=400&width=300"
-              alt="Testimonial"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                <Play className="w-6 h-6 text-white ml-1" />
-              </div>
-            </div>
-          </div>
+            ))}
         </div>
       </div>
     </section>

@@ -27,7 +27,7 @@ export default function CallToActionSection() {
                 <br />
                 product packaging the best on shelves.
               </p>
-              <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full text-lg">
+              <Button className="bg-[#ff4f01] hover:bg-[#e04501] text-white px-8 py-3 rounded-full text-lg">
                 Book a call
               </Button>
             </div>
