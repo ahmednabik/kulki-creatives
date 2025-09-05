@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
@@ -121,5 +122,28 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: "Bricolage Grotesque", "Bricolage Grotesque Placeholder", sans-serif;
   }
+}
+
+/* Bricolage Grotesque Font Utilities */
+.font-bricolage {
+  font-family: "Bricolage Grotesque", "Bricolage Grotesque Placeholder", sans-serif;
+}
+
+.font-bricolage-bold {
+  font-family: "Bricolage Grotesque", "Bricolage Grotesque Placeholder", sans-serif;
+  font-weight: 700;
+}
+
+.text-hero {
+  font-family: "Bricolage Grotesque", "Bricolage Grotesque Placeholder", sans-serif;
+  font-weight: 700;
+  color: rgb(16, 16, 16);
+  font-size: clamp(36px, 8vw, 60px);
+  line-height: 1;
+}
+
+.font-amaranth {
+  font-family: "Amaranth", sans-serif;
 }
