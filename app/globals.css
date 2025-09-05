@@ -164,3 +164,35 @@
 .backface-hidden {
   backface-visibility: hidden;
 }
+
+/* Kulki Brand Animation */
+@keyframes spin-tilt-shake {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(90deg) scale(1.1) skew(5deg);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.2) skew(-5deg);
+  }
+  75% {
+    transform: rotate(270deg) scale(1.1) skew(5deg);
+  }
+  85% {
+    transform: rotate(350deg) scale(1.05) translate(2px, -2px);
+  }
+  90% {
+    transform: rotate(355deg) scale(1.02) translate(-2px, 2px);
+  }
+  95% {
+    transform: rotate(362deg) scale(1.01) translate(1px, -1px);
+  }
+  100% {
+    transform: rotate(360deg) scale(1) translate(0px, 0px);
+  }
+}
+
+.animate-spin-tilt-shake {
+  animation: spin-tilt-shake 0.8s ease-in-out;
+}

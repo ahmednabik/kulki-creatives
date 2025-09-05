@@ -7,19 +7,19 @@ export default function ServicesSection() {
       title: "Branding",
       description: "Logo design, color schemes, and fonts to create a cohesive and memorable identity.",
       image: "https://framerusercontent.com/images/W8leNG1ES23NMXQy1Ur1MAwhwo.png?scale-down-to=512",
-      bgColor: "bg-blue-50"
+      bgColor: "bg-blue-100"
     },
     {
       title: "Labels",
       description: "Visually appealing product labels that capture your product's essence & meet industry standards.",
       image: "https://framerusercontent.com/images/xCP9g69JkBzblynEWvhsUXw9HVU.png?scale-down-to=512",
-      bgColor: "bg-purple-50"
+      bgColor: "bg-purple-100"
     },
     {
       title: "Packaging",
       description: "Innovative, functional, and eye-catching product packaging that enhances the brand's story & appeal.",
       image: "https://framerusercontent.com/images/mqeIukL7mTLJpQJhvVKBmPNs95M.png?scale-down-to=512",
-      bgColor: "bg-yellow-50"
+      bgColor: "bg-yellow-100"
     }
   ]
 
