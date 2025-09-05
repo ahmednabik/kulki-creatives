@@ -4,7 +4,7 @@ import { Check } from "lucide-react"
 
 export default function PricingSection() {
   return (
-    <section className="py-16 w-4/6 mx-auto">
+    <section id="pricing" className="py-16 w-4/6 mx-auto">
       <div className="bg-black rounded-3xl mx-4 md:mx-8">
         <div className="max-w-4xl mx-auto px-8 py-16 text-center">
           <Badge className="bg-[#ff4f01] text-white mb-8 px-4 py-2">✱ Pricing</Badge>

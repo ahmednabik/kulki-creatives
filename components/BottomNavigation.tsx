@@ -1,23 +1,77 @@
+'use client'
+
 import { Button } from "@/components/ui/button"
+import { ArrowUp } from "lucide-react"
+import { useEffect, useState } from "react"
 
 export default function BottomNavigation() {
+  const [activeSection, setActiveSection] = useState("services")
+
+  const sections = [
+    { id: "services", label: "Services" },
+    { id: "features", label: "Features" },
+    { id: "projects", label: "Projects" },
+    { id: "pricing", label: "Pricing" },
+    { id: "testimonials", label: "Reviews" }
+  ]
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 100
+
+      for (const section of sections) {
+        const element = document.getElementById(section.id)
+        if (element) {
+          const { offsetTop, offsetHeight } = element
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(section.id)
+            break
+          }
+        }
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   return (
-    <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50">
-      <div className="bg-black rounded-full px-6 py-3 flex items-center gap-6">
-        <Button variant="ghost" className="text-[#ff4f01] bg-[#ff4f01]/10 px-4 py-2 rounded-full text-sm">
-          Services
-        </Button>
-        <Button variant="ghost" className="text-white hover:text-[#ff4f01] px-4 py-2 rounded-full text-sm">
-          Features
-        </Button>
-        <Button variant="ghost" className="text-white hover:text-[#ff4f01] px-4 py-2 rounded-full text-sm">
-          Projects
-        </Button>
-        <Button variant="ghost" className="text-white hover:text-[#ff4f01] px-4 py-2 rounded-full text-sm">
-          Pricing
-        </Button>
-        <Button variant="ghost" className="text-white hover:text-[#ff4f01] px-4 py-2 rounded-full text-sm">
-          Reviews
+    <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50">
+      <div className="bg-black/80 backdrop-blur-md rounded-full px-3 py-2 flex items-center gap-1 shadow-lg">
+        {sections.map((section) => (
+          <Button
+            key={section.id}
+            variant="ghost"
+            onClick={() => scrollToSection(section.id)}
+            className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-200 ${
+              activeSection === section.id
+                ? "text-[#ff4f01] bg-[#ff4f01]/15"
+                : "text-white/70 hover:text-[#ff4f01] hover:bg-white/10"
+            }`}
+          >
+            {section.label}
+          </Button>
+        ))}
+        
+        <div className="w-px h-4 bg-white/20 mx-1" />
+        
+        <Button
+          variant="ghost"
+          onClick={scrollToTop}
+          className="text-white/70 hover:text-[#ff4f01] hover:bg-white/10 p-1.5 rounded-full transition-all duration-200"
+        >
+          <ArrowUp className="w-3 h-3" />
         </Button>
       </div>
     </div>

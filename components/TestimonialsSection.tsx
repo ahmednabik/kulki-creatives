@@ -3,7 +3,7 @@ import { Play } from "lucide-react"
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-16 mt-24">
+    <section id="testimonials" className="py-16 mt-24">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <Badge className="bg-orange-100 text-orange-600 mb-4">✱ Testimonials</Badge>
