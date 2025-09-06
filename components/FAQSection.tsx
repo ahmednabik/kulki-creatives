@@ -33,7 +33,7 @@ export default function FAQSection() {
   }
 
   return (
-    <section className="py-16 ">
+    <section className="py-24 ">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-12">
        <Badge className="bg-orange-100 text-orange-600 mb-4">✱ FAQ</Badge>

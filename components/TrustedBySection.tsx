@@ -53,7 +53,7 @@ export default function TrustedBySection() {
         }
         
         .animate-scroll {
-          animation: scroll 25s linear infinite;
+          animation: scroll 20s linear infinite;
         }
         
         .animate-scroll:hover {

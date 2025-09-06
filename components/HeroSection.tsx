@@ -65,13 +65,13 @@ export default function HeroSection() {
             that never goes on leave
           </h2>
           <p className="text-lg text-gray-600 mb-8">Have a PRO designer on standby. Any day. Any hour</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-row gap-4 justify-center">
             <Button className="bg-[#ff4f01] hover:bg-[#e04501] text-white px-8 py-6 rounded-full text-lg">
               Book a call
             </Button>
             <Button
               variant="outline"
-              className=" text-white bg-black px-8 py-6 rounded-full text-lg "
+              className=" text-black border bg-transparent px-8 py-6 rounded-full text-lg "
             >
               See Pricing
             </Button>

@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export default function ProcessSection() {
   return (
-    <section className="py-16">
+    <section className="md:py-24">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <Badge className="bg-orange-100 text-orange-600 mb-4">✱ Process</Badge>

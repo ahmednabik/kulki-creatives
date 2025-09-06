@@ -46,7 +46,7 @@ export default function FeaturedProjectsSection() {
   ]
 
   return (
-    <section id="projects" className="py-16">
+    <section id="projects" className="py-24">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <Badge className="bg-orange-100 text-orange-600 mb-4">✱ Projects</Badge>
