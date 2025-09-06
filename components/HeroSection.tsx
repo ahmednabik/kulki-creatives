@@ -11,6 +11,7 @@ import KulkiLogo from "./icons/KulkiLogo"
 export default function HeroSection() {
   return (
     <section className="relative px-4 py-16 md:py-24 overflow-hidden">
+
       <div className="max-w-7xl mx-auto text-center relative">
         {/* Floating Service Icons */}
         {/* Logo Icon - Top Left */}
@@ -70,7 +71,7 @@ export default function HeroSection() {
             </Button>
             <Button
               variant="outline"
-              className="border-gray-300 text-black px-8 py-6 rounded-full text-lg bg-transparent"
+              className=" text-white bg-black px-8 py-6 rounded-full text-lg "
             >
               See Pricing
             </Button>
