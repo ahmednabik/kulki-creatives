@@ -22,7 +22,7 @@ export default function HeroSection() {
         </div>
 
         {/* Packaging Icon - Top Right */}
-        <div className="absolute top-0 right-8 hidden lg:flex flex-col items-center">
+        <div className="absolute top-0 right-16 hidden lg:flex flex-col items-center">
      <PackagingIcon/>
           <span className="text-sm text-gray-600">Packaging</span>
         </div>
@@ -46,13 +46,13 @@ export default function HeroSection() {
         </div>
 
         {/* Research Icon - Bottom Right */}
-        <div className="absolute bottom-0 right-8 hidden lg:flex flex-col items-center">
+        <div className="absolute bottom-0 right-16 hidden lg:flex flex-col items-center">
          <ResearchIcon/>
           <span className="text-sm text-gray-600">Research</span>
         </div>
 
         {/* Brand */}
-        <div className="mb-16">
+        <div className="mb-24">
           <KulkiLogo/>
         </div>
 

@@ -1,14 +1,12 @@
 export default function ResearchIcon() {
   return (
-    <svg width="70" height="70" viewBox="0 0 71 71" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="28" cy="28" r="20" fill="#ffffff" stroke="rgb(16,16,16)" strokeWidth="2"/>
-      <path d="M 42.5 42.5 L 62.5 62.5" stroke="rgb(16,16,16)" strokeWidth="4" strokeLinecap="round"/>
-      <circle cx="28" cy="28" r="13" fill="rgb(255,79,1)" opacity="0.3"/>
-      <path d="M 20 28 L 36 28" stroke="rgb(255,79,1)" strokeWidth="2" strokeLinecap="round"/>
-      <path d="M 28 20 L 28 36" stroke="rgb(255,79,1)" strokeWidth="2" strokeLinecap="round"/>
-      <circle cx="28" cy="28" r="3" fill="rgb(255,79,1)"/>
-      <path d="M 22 22 L 34 34" stroke="rgb(255,79,1)" strokeWidth="1.5" strokeLinecap="round" opacity="0.7"/>
-      <path d="M 34 22 L 22 34" stroke="rgb(255,79,1)" strokeWidth="1.5" strokeLinecap="round" opacity="0.7"/>
+    <svg width="70" height="70" viewBox="0 0 38.35 58.34" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <style>{`.cls-1{fill:#000;stroke-width:0}`}</style>
+      </defs>
+      <path className="cls-1" d="M18.8 35.65c-7.07 0-13.92-4.22-17-10.62-2.46-5.11-2.4-11.43.16-16.49C4.14 4.23 7.85 1.38 12.4.53c6.52-1.22 12.66-.3 17.28 2.6 5.54 3.48 8.57 9.92 7.35 15.67-.65 3.09-2.39 5.74-4.27 8.42-1.68 2.39-3.38 4.67-5.75 6.2-1.88 1.21-4.22 1.96-6.78 2.17-.48.04-.96.06-1.43.06ZM17.93 2.3c-1.65 0-3.36.16-5.1.49C9 3.51 5.87 5.92 4.02 9.58c-2.24 4.43-2.29 9.97-.14 14.45 2.84 5.9 9.64 9.81 16.17 9.27 2.19-.18 4.16-.8 5.72-1.81 2.02-1.31 3.51-3.31 5.12-5.59 1.8-2.57 3.33-4.91 3.9-7.58C35.8 13.57 33.14 8 28.47 5.07c-2.92-1.83-6.55-2.78-10.53-2.78Z"/>
+      <path d="M27.42 24.41a1.151 1.151 0 0 1-.85-1.92c2.17-2.39 2.84-6.01 1.68-9.02-1.17-3.01-4.11-5.23-7.32-5.53-.63-.06-1.1-.62-1.04-1.25.06-.63.6-1.1 1.25-1.04 4.06.38 7.77 3.19 9.25 6.99 1.47 3.8.62 8.38-2.12 11.4-.23.25-.54.38-.85.38Z" style={{fill:'#ff680a', strokeWidth:0}} />
+      <path className="cls-1" d="m22.76 33.72 8.16 20.49c.71 1.78 1.74 3.83 3.64 4.11 2.19.32 3.94-2.18 3.79-4.39s-1.54-4.12-2.77-5.96c-3.4-5.08-6-10.65-8.34-16.3"/>
     </svg>
   );
 }
