@@ -54,52 +54,138 @@ export default function FeaturedProjectsSection() {
           <p className="text-gray-600 text-lg">Get a glimpse of our work</p>
         </div>
 
-        {/* Main featured project */}
-        <div className="mb-8">
-          <div className="relative bg-white rounded-3xl overflow-hidden shadow-sm">
-            <img
-              src={projects[0].image}
-              alt={projects[0].title}
-              className="w-full h-[500px] object-cover"
-            />
-            <div className="absolute bottom-6 left-6 text-white">
-              <h3 className="text-2xl font-bold">{projects[0].title}</h3>
-              <p className="text-lg opacity-90">- {projects[0].description}</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Secondary featured project */}
-        <div className="mb-8">
-          <div className="relative bg-gradient-to-br from-[#ff4f01] to-yellow-500 rounded-3xl overflow-hidden">
-            <img
-              src={projects[1].image}
-              alt={projects[1].title}
-              className="w-full h-96 object-cover"
-            />
-            <div className="absolute bottom-6 right-6 text-white text-right">
-              <h3 className="text-xl font-bold">{projects[1].title}</h3>
-            </div>
-          </div>
-        </div>
-
-        {/* Grid of smaller projects */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
-          {projects.slice(2).map((project, index) => (
-            <div key={index} className="relative bg-white rounded-2xl overflow-hidden shadow-sm group hover:shadow-md transition-shadow">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="p-4">
-                <h4 className="font-bold text-sm text-black">{project.title}</h4>
-                {project.description && (
-                  <p className="text-xs text-gray-600">- {project.description}</p>
-                )}
+        {/* Featured Projects - Two Column Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          
+          {/* LEFT COLUMN */}
+          <div className="space-y-8 mt-12">
+            {/* Project 1 - Klang Guard */}
+            <div className="space-y-4">
+              <div className="bg-white rounded-3xl overflow-hidden">
+                <img
+                  src={projects[0].image}
+                  alt={projects[0].title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="px-2">
+                <h3 className="text-xl font-bold text-black">{projects[0].title}</h3>
+                <p className="text-gray-600">- {projects[0].description}</p>
               </div>
             </div>
-          ))}
+
+            {/* Project 3 - Nooro */}
+            <div className="space-y-4">
+              <div className="bg-gradient-to-br from-orange-400 to-yellow-400 rounded-3xl overflow-hidden">
+                <img
+                  src={projects[2].image}
+                  alt={projects[2].title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="px-2">
+                <h3 className="text-xl font-bold text-black">{projects[2].title}</h3>
+                <p className="text-gray-600">- {projects[2].description}</p>
+              </div>
+            </div>
+
+                {/* Project 4 - Brand Identity */}
+            <div className="space-y-4">
+              <div className="bg-white rounded-3xl overflow-hidden">
+                <img
+                  src={projects[7].image}
+                  alt={projects[7].title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="px-2">
+                <h3 className="text-xl font-bold text-black">{projects[7].title}</h3>
+                <p className="text-gray-600">- {projects[7].description}</p>
+              </div>
+            </div>
+
+      
+
+            {/* Project 7 - Food Packaging */}
+            <div className="space-y-4">
+              <div className="bg-white rounded-3xl overflow-hidden">
+                <img
+                  src={projects[6].image}
+                  alt={projects[6].title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="px-2">
+                <h3 className="text-xl font-bold text-black">{projects[6].title}</h3>
+                <p className="text-gray-600">- {projects[6].description}</p>
+              </div>
+            </div>
+          </div>
+
+          {/* RIGHT COLUMN */}
+          <div className="space-y-8 ">
+            {/* Project 2 - Wellness Brand */}
+            <div className="space-y-4">
+              <div className="bg-white rounded-3xl overflow-hidden">
+                <img
+                  src={projects[1].image}
+                  alt={projects[1].title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="px-2">
+                <h3 className="text-xl font-bold text-black">{projects[1].title}</h3>
+              </div>
+            </div>
+
+            {/* Project 4 - Body Armour */}
+            <div className="space-y-4">
+              <div className="bg-white rounded-3xl overflow-hidden">
+                <img
+                  src={projects[3].image}
+                  alt={projects[3].title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="px-2">
+                <h3 className="text-xl font-bold text-black">{projects[3].title}</h3>
+                <p className="text-gray-600">- {projects[3].description}</p>
+              </div>
+            </div>
+
+            {/* Project 6 - Health Supplements */}
+            <div className="space-y-4">
+              <div className="bg-white rounded-3xl overflow-hidden">
+                <img
+                  src={projects[5].image}
+                  alt={projects[5].title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="px-2">
+                <h3 className="text-xl font-bold text-black">{projects[5].title}</h3>
+                <p className="text-gray-600">- {projects[5].description}</p>
+              </div>
+            </div>
+
+        
+
+               {/* Project 5 - Premium Tea */}
+            <div className="space-y-4">
+              <div className="bg-white rounded-3xl overflow-hidden">
+                <img
+                  src={projects[4].image}
+                  alt={projects[4].title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="px-2">
+                <h3 className="text-xl font-bold text-black">{projects[4].title}</h3>
+                <p className="text-gray-600">- {projects[4].description}</p>
+              </div>
+            </div>
+
+          </div>
         </div>
 
         <div className="text-center">

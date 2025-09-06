@@ -49,7 +49,7 @@ const ImageGrid = () => {
       
       // Calculate scroll offset to reveal hidden images with very little scroll
       // Much more sensitive - starts revealing immediately and completes quickly
-      const maxOffset = 600 // Distance to fully reveal hidden images
+      const maxOffset = 1100 // Distance to fully reveal hidden images
       const scrollThreshold = 200 // Only need to scroll 200px to fully reveal
       const offset = Math.min((scrollY / scrollThreshold) * maxOffset, maxOffset)
       setScrollOffset(offset)

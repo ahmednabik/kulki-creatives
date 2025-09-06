@@ -43,7 +43,7 @@ export default function FAQSection() {
           <p className="text-gray-600 text-lg">What our customers say about our work.</p>
         </div>
 
-        <div className="space-y-4 max-w-2xl mx-auto">
+        <div className="space-y-4 max-w-2xl mb-20 mx-auto">
           {faqs.map((faq, index) => (
             <div 
               key={index}
@@ -51,7 +51,7 @@ export default function FAQSection() {
             >
               <button
                 onClick={() => toggleFaq(index)}
-                className="w-full p-6 text-left hover:bg-gray-50 transition-colors"
+                className="w-full p-6 text-left border border-black rounded-2xl "
               >
                 <div className="flex justify-between items-center">
                   <h3 className="text-lg font-medium text-gray-700 pr-4">{faq.question}</h3>

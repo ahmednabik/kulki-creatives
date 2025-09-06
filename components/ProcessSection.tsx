@@ -64,39 +64,8 @@ export default function ProcessSection() {
           </div>
 
           {/* Connecting Arrows */}
-          <div className="hidden md:block absolute top-1/2 left-1/3 transform -translate-y-1/2 -translate-x-1/2">
-            <svg width="60" height="40" viewBox="0 0 60 40" className="text-gray-400">
-              <path
-                d="M10 20 Q30 10 50 20"
-                stroke="currentColor"
-                strokeWidth="2"
-                fill="none"
-                markerEnd="url(#arrowhead)"
-              />
-              <defs>
-                <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                  <polygon points="0 0, 10 3.5, 0 7" fill="currentColor" />
-                </marker>
-              </defs>
-            </svg>
-          </div>
+         
 
-          <div className="hidden md:block absolute top-1/2 right-1/3 transform -translate-y-1/2 translate-x-1/2">
-            <svg width="60" height="40" viewBox="0 0 60 40" className="text-gray-400">
-              <path
-                d="M10 20 Q30 30 50 20"
-                stroke="currentColor"
-                strokeWidth="2"
-                fill="none"
-                markerEnd="url(#arrowhead2)"
-              />
-              <defs>
-                <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                  <polygon points="0 0, 10 3.5, 0 7" fill="currentColor" />
-                </marker>
-              </defs>
-            </svg>
-          </div>
         </div>
       </div>
     </section>
