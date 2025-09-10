@@ -18,12 +18,13 @@ export default function TestimonialsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {/* Real Video Testimonials */}
           {[
             "WhatsApp Video 2025-09-05 at 1.19.30 AM (1).mp4",
             "WhatsApp Video 2025-09-05 at 1.19.30 AM.mp4",
             "WhatsApp Video 2025-09-05 at 1.19.31 AM.mp4",
+            "WhatsApp Video 2025-09-05 at 1.19.33 AM.mp4",
             "WhatsApp Video 2025-09-05 at 1.19.33 AM.mp4",
           ].map((video, idx) => (
             <div
