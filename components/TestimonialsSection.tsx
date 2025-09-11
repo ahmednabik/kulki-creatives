@@ -11,11 +11,9 @@ export default function TestimonialsSection() {
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
             Don't just take our
             <br />
-            word for it. Take theirs.
+            word for it.
           </h2>
-          <p className="text-gray-600 text-lg">
-            What our customers say about our work.
-          </p>
+          <p className="text-gray-600 text-lg">See what our clients say.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">

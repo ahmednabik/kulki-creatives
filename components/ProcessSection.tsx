@@ -9,13 +9,13 @@ export default function ProcessSection() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <Badge className="bg-orange-100 text-orange-600 mb-4">
-            ✱ Process
+            ✱ How it works
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
             You request, we make it happen
           </h2>
           <p className="text-gray-600 text-lg">
-            Our process is as simple as possible.
+            Our design process is as simple as it can get.
           </p>
         </div>
 
@@ -33,7 +33,8 @@ export default function ProcessSection() {
                 <h3 className="text-2xl font-bold mb-4">Start</h3>
                 <p className="text-gray-300">
                   Book a free discovery call with us to discuss your project. We
-                  will talk and initiate the project.
+                  will talk, understand your design needs, give you a quote and
+                  start the project.
                 </p>
               </CardContent>
             </Card>
@@ -47,10 +48,11 @@ export default function ProcessSection() {
                     className="w-24 h-24 object-contain"
                   />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Progress</h3>
+                <h3 className="text-2xl font-bold mb-4">Design</h3>
                 <p className="text-gray-300">
-                  We will start working on your project and keep sharing the
-                  progress with you for feedback and revisions.
+                  We will start working on the project & keep sharing the
+                  progress with you for feedback and revisions. This will go on
+                  till you are happy and approve the designs.
                 </p>
               </CardContent>
             </Card>
@@ -66,8 +68,8 @@ export default function ProcessSection() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Deliver</h3>
                 <p className="text-gray-300">
-                  When you are 100% satisfied and approve the final designs, we
-                  will deliver all files.
+                  Once approved, we will prepare the final print-ready files and
+                  deliver them to you. You will also get all the source files.
                 </p>
               </CardContent>
             </Card>

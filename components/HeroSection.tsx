@@ -12,9 +12,9 @@ import TypewriterText from "./typewriter-text";
 export default function HeroSection() {
   const services = [
     "Logo Design",
-    "Packaging ",
-    "Branding ",
-    "3D Mockups ",
+    "Packagings",
+    "Branding",
+    "3D Mockups",
     "Label Designs",
   ];
   return (
@@ -58,7 +58,7 @@ export default function HeroSection() {
         </div>
 
         {/* Brand */}
-        <div className="mb-24 mx-auto flex justify-center">
+        <div className="mb-24 mx-auto flex justify-center hover:scale-105 duration-300">
           <KulkiLogo />
         </div>
 
