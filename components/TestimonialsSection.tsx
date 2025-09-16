@@ -17,22 +17,23 @@ export default function TestimonialsSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          {/* Real Video Testimonials */}
           {[
-            "WhatsApp Video 2025-09-05 at 1.19.30 AM (1).mp4",
-            "WhatsApp Video 2025-09-05 at 1.19.30 AM.mp4",
-            "WhatsApp Video 2025-09-05 at 1.19.31 AM.mp4",
-            "WhatsApp Video 2025-09-05 at 1.19.33 AM.mp4",
-            "WhatsApp Video 2025-09-05 at 1.19.33 AM.mp4",
-          ].map((video, idx) => (
+            "0q_tFsX6swY",
+            "3MDEus55_0I",
+            "VkXEO5tKkpw",
+            "vcKS9mp9xKg",
+            "5H6EV9SVGko",
+          ].map((videoId, idx) => (
             <div
-              key={video}
+              key={videoId + idx}
               className="relative bg-black rounded-2xl aspect-[9/16] overflow-hidden group shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <video
-                src={`/${video}`}
-                controls
-                className="w-full h-full object-cover"
+              <iframe
+                src={`https://www.youtube.com/embed/${videoId}`}
+                title={`Testimonial video ${idx + 1}`}
+                className="w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
               />
             </div>
           ))}
