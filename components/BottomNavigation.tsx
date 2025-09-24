@@ -1,50 +1,56 @@
-'use client'
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { ArrowUp } from "lucide-react"
-import { useEffect, useState } from "react"
+import { Button } from "@/components/ui/button";
+import { ArrowUp } from "lucide-react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 
 export default function BottomNavigation() {
-  const [activeSection, setActiveSection] = useState("services")
+  const [activeSection, setActiveSection] = useState("services");
 
-  const sections = [
-    { id: "services", label: "Services" },
-    { id: "features", label: "Features" },
-    { id: "projects", label: "Projects" },
-    { id: "pricing", label: "Pricing" },
-    { id: "testimonials", label: "Reviews" }
-  ]
+  const sections = useMemo(
+    () => [
+      { id: "services", label: "Services" },
+      { id: "features", label: "Features" },
+      { id: "projects", label: "Projects" },
+      { id: "pricing", label: "Pricing" },
+      { id: "testimonials", label: "Reviews" },
+    ],
+    []
+  );
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY + 100
+  const handleScroll = useCallback(() => {
+    const scrollPosition = window.scrollY + 100;
 
-      for (const section of sections) {
-        const element = document.getElementById(section.id)
-        if (element) {
-          const { offsetTop, offsetHeight } = element
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-            setActiveSection(section.id)
-            break
-          }
+    for (const section of sections) {
+      const element = document.getElementById(section.id);
+      if (element) {
+        const { offsetTop, offsetHeight } = element;
+        if (
+          scrollPosition >= offsetTop &&
+          scrollPosition < offsetTop + offsetHeight
+        ) {
+          setActiveSection(section.id);
+          break;
         }
       }
     }
+  }, [sections]);
 
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [handleScroll]);
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId)
+  const scrollToSection = useCallback((sectionId: string) => {
+    const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
+  const scrollToTop = useCallback(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   return (
     <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50">
@@ -63,9 +69,9 @@ export default function BottomNavigation() {
             {section.label}
           </Button>
         ))}
-        
+
         <div className="w-px h-4 bg-white/20 mx-1" />
-        
+
         <Button
           variant="ghost"
           onClick={scrollToTop}
@@ -75,5 +81,5 @@ export default function BottomNavigation() {
         </Button>
       </div>
     </div>
-  )
+  );
 }

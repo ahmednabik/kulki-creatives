@@ -9,7 +9,7 @@ export default function TestimonialsSection() {
             ✱ Testimonials
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
-            Don't just take our
+            Don&apos;t just take our
             <br />
             word for it.
           </h2>

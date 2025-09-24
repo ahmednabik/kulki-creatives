@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 export default function TrustedBySection() {
   const logos = [
     "logos/1.png",
@@ -29,10 +30,12 @@ export default function TrustedBySection() {
                 key={`first-${index}`}
                 className="flex-shrink-0 mx-8 md:mx-12"
               >
-                <img
+                <Image
                   src={logo}
                   alt={`Company logo ${index + 1}`}
                   className="h-8 md:h-10  "
+                  width={100}
+                  height={100}
                 />
               </div>
             ))}
@@ -42,10 +45,12 @@ export default function TrustedBySection() {
                 key={`second-${index}`}
                 className="flex-shrink-0 mx-8 md:mx-12"
               >
-                <img
+                <Image
                   src={logo}
                   alt={`Company logo ${index + 1}`}
                   className="h-8 md:h-10 "
+                  width={100}
+                  height={100}
                 />
               </div>
             ))}
