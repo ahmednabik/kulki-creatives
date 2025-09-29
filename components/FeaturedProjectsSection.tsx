@@ -14,7 +14,7 @@ export default function FeaturedProjectsSection() {
       image:
         "https://framerusercontent.com/images/Id9OISF0DA4qbnOUFkXR2QmTOQ.png",
       title: "wellness brand based in Latvia",
-      description: "",
+      description: "wellness brand based in Latvia",
     },
     {
       image:
@@ -74,76 +74,108 @@ export default function FeaturedProjectsSection() {
             {/* Project 1 - Klang Guard */}
             <div className="space-y-4">
               <div className="bg-white rounded-3xl overflow-hidden">
-                <Image
-                  src={projects[0].image}
-                  alt={projects[0].title}
-                  className="w-full h-full object-cover"
-                  width={56}
-                  height={56}
-                />
+                <a
+                  href="https://www.figma.com/design/CGnNwhDahwJnxwdCXRIG6g/Kulki-Portfolio?node-id=20-16&t=lZfazpg6NudznxNO-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src={projects[0].image}
+                    alt={projects[0].title}
+                    className="w-full h-full object-cover"
+                    width={56}
+                    height={56}
+                  />
+                </a>
               </div>
               <div className="px-2">
                 <h3 className="text-xl font-bold text-black">
                   {projects[0].title}
                 </h3>
-                <p className="text-gray-600">- {projects[0].description}</p>
+                <p className="text-gray-600 text-sm italic font-light">
+                  {projects[0].description}
+                </p>
               </div>
             </div>
 
             {/* Project 3 - Nooro */}
             <div className="space-y-4">
               <div className="bg-gradient-to-br from-orange-400 to-yellow-400 rounded-3xl overflow-hidden">
-                <Image
-                  src={projects[2].image}
-                  alt={projects[2].title}
-                  className="w-full h-full object-cover"
-                  width={56}
-                  height={56}
-                />
+                <a
+                  href="https://www.figma.com/design/CGnNwhDahwJnxwdCXRIG6g/Kulki-Portfolio?node-id=20-16&t=lZfazpg6NudznxNO-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src={projects[2].image}
+                    alt={projects[2].title}
+                    className="w-full h-full object-cover"
+                    width={56}
+                    height={56}
+                  />
+                </a>
               </div>
               <div className="px-2">
                 <h3 className="text-xl font-bold text-black">
                   {projects[2].title}
                 </h3>
-                <p className="text-gray-600">- {projects[2].description}</p>
+                <p className="text-gray-600 text-sm italic font-light">
+                  {projects[2].description}
+                </p>
               </div>
             </div>
 
             {/* Project 4 - Brand Identity */}
             <div className="space-y-4">
               <div className="bg-white rounded-3xl overflow-hidden">
-                <Image
-                  src={projects[7].image}
-                  alt={projects[7].title}
-                  className="w-full h-full object-cover"
-                  width={56}
-                  height={56}
-                />
+                <a
+                  href="https://www.figma.com/design/CGnNwhDahwJnxwdCXRIG6g/Kulki-Portfolio?node-id=20-16&t=lZfazpg6NudznxNO-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src={projects[7].image}
+                    alt={projects[7].title}
+                    className="w-full h-full object-cover"
+                    width={56}
+                    height={56}
+                  />
+                </a>
               </div>
               <div className="px-2">
                 <h3 className="text-xl font-bold text-black">
                   {projects[7].title}
                 </h3>
-                <p className="text-gray-600">- {projects[7].description}</p>
+                <p className="text-gray-600 text-sm italic font-light">
+                  {projects[7].description}
+                </p>
               </div>
             </div>
 
             {/* Project 7 - Food Packaging */}
             <div className="space-y-4">
               <div className="bg-white rounded-3xl overflow-hidden">
-                <Image
-                  src={projects[6].image}
-                  alt={projects[6].title}
-                  className="w-full h-full object-cover"
-                  width={56}
-                  height={56}
-                />
+                <a
+                  href="https://www.figma.com/design/CGnNwhDahwJnxwdCXRIG6g/Kulki-Portfolio?node-id=20-16&t=lZfazpg6NudznxNO-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src={projects[6].image}
+                    alt={projects[6].title}
+                    className="w-full h-full object-cover"
+                    width={56}
+                    height={56}
+                  />
+                </a>
               </div>
               <div className="px-2">
                 <h3 className="text-xl font-bold text-black">
                   {projects[6].title}
                 </h3>
-                <p className="text-gray-600">- {projects[6].description}</p>
+                <p className="text-gray-600 text-sm italic font-light">
+                  {projects[6].description}
+                </p>
               </div>
             </div>
           </div>
@@ -153,87 +185,126 @@ export default function FeaturedProjectsSection() {
             {/* Project 2 - Wellness Brand */}
             <div className="space-y-4">
               <div className="bg-white rounded-3xl overflow-hidden">
-                <Image
-                  src={projects[1].image}
-                  alt={projects[1].title}
-                  className="w-full h-full object-cover"
-                  width={56}
-                  height={56}
-                />
+                <a
+                  href="https://www.figma.com/design/CGnNwhDahwJnxwdCXRIG6g/Kulki-Portfolio?node-id=20-16&t=lZfazpg6NudznxNO-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src={projects[1].image}
+                    alt={projects[1].title}
+                    className="w-full h-full object-cover"
+                    width={56}
+                    height={56}
+                  />
+                </a>
               </div>
               <div className="px-2">
                 <h3 className="text-xl font-bold text-black">
                   {projects[1].title}
                 </h3>
+                <p className="text-gray-600 text-sm italic font-light">
+                  {projects[1].description}
+                </p>
               </div>
             </div>
 
             {/* Project 4 - Body Armour */}
             <div className="space-y-4">
               <div className="bg-white rounded-3xl overflow-hidden">
-                <Image
-                  src={projects[3].image}
-                  alt={projects[3].title}
-                  className="w-full h-full object-cover"
-                  width={56}
-                  height={56}
-                />
+                <a
+                  href="https://www.figma.com/design/CGnNwhDahwJnxwdCXRIG6g/Kulki-Portfolio?node-id=20-16&t=lZfazpg6NudznxNO-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src={projects[3].image}
+                    alt={projects[3].title}
+                    className="w-full h-full object-cover"
+                    width={56}
+                    height={56}
+                  />
+                </a>
               </div>
               <div className="px-2">
                 <h3 className="text-xl font-bold text-black">
                   {projects[3].title}
                 </h3>
-                <p className="text-gray-600">- {projects[3].description}</p>
+                <p className="text-gray-600 text-sm italic font-light">
+                  {projects[3].description}
+                </p>
               </div>
             </div>
 
             {/* Project 6 - Health Supplements */}
             <div className="space-y-4">
               <div className="bg-white rounded-3xl overflow-hidden">
-                <Image
-                  src={projects[5].image}
-                  alt={projects[5].title}
-                  className="w-full h-full object-cover"
-                  width={56}
-                  height={56}
-                />
+                <a
+                  href="https://www.figma.com/design/CGnNwhDahwJnxwdCXRIG6g/Kulki-Portfolio?node-id=20-16&t=lZfazpg6NudznxNO-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src={projects[5].image}
+                    alt={projects[5].title}
+                    className="w-full h-full object-cover"
+                    width={56}
+                    height={56}
+                  />
+                </a>
               </div>
               <div className="px-2">
                 <h3 className="text-xl font-bold text-black">
                   {projects[5].title}
                 </h3>
-                <p className="text-gray-600">- {projects[5].description}</p>
+                <p className="text-gray-600 text-sm italic font-light">
+                  {projects[5].description}
+                </p>
               </div>
             </div>
 
             {/* Project 5 - Premium Tea */}
             <div className="space-y-4">
               <div className="bg-white rounded-3xl overflow-hidden">
-                <Image
-                  src={projects[4].image}
-                  alt={projects[4].title}
-                  className="w-full h-full object-cover"
-                  width={56}
-                  height={56}
-                />
+                <a
+                  href="https://www.figma.com/design/CGnNwhDahwJnxwdCXRIG6g/Kulki-Portfolio?node-id=20-16&t=lZfazpg6NudznxNO-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src={projects[4].image}
+                    alt={projects[4].title}
+                    className="w-full h-full object-cover"
+                    width={56}
+                    height={56}
+                  />
+                </a>
               </div>
               <div className="px-2">
                 <h3 className="text-xl font-bold text-black">
                   {projects[4].title}
                 </h3>
-                <p className="text-gray-600">- {projects[4].description}</p>
+                <p className="text-gray-600 text-sm italic font-light">
+                  {projects[4].description}
+                </p>
               </div>
             </div>
           </div>
         </div>
 
         <div className="text-center">
-          <Button
-            variant="outline"
-            className="border-black text-black px-8 py-3 rounded-full text-lg hover:bg-black hover:text-white bg-transparent"
+          <a
+            href="https://www.figma.com/design/CGnNwhDahwJnxwdCXRIG6g/Kulki-Portfolio?node-id=20-16&t=lZfazpg6NudznxNO-1"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            View all projects
-          </Button>
+            <Button
+              variant="outline"
+              className="border-black text-black px-8 py-3 rounded-full text-lg hover:bg-black hover:text-white bg-transparent cursor-pointer"
+            >
+              View all projects
+            </Button>
+          </a>
         </div>
       </div>
     </section>
