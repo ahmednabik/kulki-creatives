@@ -102,7 +102,7 @@ export default function PricingSection() {
             </div>
 
             <Button className="bg-[#ff4f01] hover:bg-[#e04501] text-white w-full py-3 rounded-full font-medium">
-              Book a 15-min call
+              Book a 15 min call
             </Button>
           </div>
         </div>
